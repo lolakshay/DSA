@@ -4,16 +4,17 @@ using namespace std;
 
 int fact(int n)
 {
-    if(n==1){
-        return 1;
+    if(n==0)
+    {
+        return 0;
     }
-    return n*fact(n-1);
+     return (n%10)+fact(n/10);
 }
 
 int main()
 {
-    int n = 0;
-    int ans = fact(n);
+    long long n = 78094378988999;
+    long long ans = fact(n);
     cout<<ans;
     return 0;
 }
